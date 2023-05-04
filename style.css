@@ -6,6 +6,7 @@
 
 html,body{
     height: 100vh;
+    font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -63,6 +64,7 @@ nav svg {
 
 .front-page {
     min-height: 100vh;
+    color: white;
     
 }
 
@@ -143,3 +145,19 @@ nav svg {
     font-size: 2rem;
     transform: translate(-50%, 10%);
 }
+
+.about h2 {
+    font-family: "argonite", sans-serif;
+    text-align: center;
+}
+
+.about p {
+    line-height: 150%;
+    font-size: 1.2rem;
+}
+
+.about img {
+    width: 100%;
+    margin-top: 2rem;
+}
+
