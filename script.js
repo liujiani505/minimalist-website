@@ -22,3 +22,23 @@ burger.addEventListener("click", ()=>{
 
 })
 
+// use gaps utility class to add each video into an array
+const videos = gsap.utils.toArray('.video')
+// set each video opacity to 0
+gsap.set(videos, { opacity: 0 });
+// then loop over each video
+videos.forEach((video) => {
+    ScrollTrigger.create({
+        trigger: video,
+        start: "top center",
+        end: "bottom center",
+        onEnter: () => {
+            gsap.to(video, { opacity: 1});
+            video.play();
+        },
+        onEnterBack: () => video.play(),
+        onLeave: () => video.pause(),
+        onLeaveBack: () => video.pause(),
+    })
+})
+
