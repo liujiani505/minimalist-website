@@ -6,6 +6,7 @@ burger.addEventListener("click", ()=>{
         gsap.to('.links', { x: "100%"});
         gsap.to(".line", { stroke: "white" });
         gsap.set("body", { overflow: "auto" });
+        gsap.set("body", { overflowX: "hidden" });
     } else {
         gsap.to('.links', { x: "0%"});
         gsap.to(".line", { stroke: "black" });
